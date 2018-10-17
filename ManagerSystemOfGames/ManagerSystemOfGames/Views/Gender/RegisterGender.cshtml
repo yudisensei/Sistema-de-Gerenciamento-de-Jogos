@@ -1,0 +1,17 @@
+﻿@model ManagementSystemOfGames.ViewModel.GenderViewModel 
+@{
+    ViewBag.Title = "RegisterGender";
+}
+
+<h2>RegisterGender</h2>
+
+@Helper1.Message("msg")
+
+@using (Html.BeginForm()) {
+
+    <div class="form-group">
+        @Html.LabelFor(g => g.Gender.Name)
+        @Html.LabelFor(g => g.Gender.Name, new { @class="form-control"})
+    </div>
+@Helper1.Button("Register")        
+}

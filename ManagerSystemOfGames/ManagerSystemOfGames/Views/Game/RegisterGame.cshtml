@@ -1,0 +1,32 @@
+﻿@model ManagementSystemOfGames.ViewModel.GameViewModel  
+@{
+    ViewBag.Title = "RegisterGame";
+}
+
+<h2>RegisterGame</h2>
+
+@Helper1.Message(TempData["msg"])
+
+@using (Html.BeginForm())
+{
+
+    <div class="form-group">
+        @Html.LabelFor(g => g.Game.Name)
+        @Html.TextBoxFor(g => g.Game.Name, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(g => g.Game.Plataform)
+        @Html.EnumDropDownListFor(g => g.Game.Plataform,"Select", new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(g => g.Game.DateRelease)
+        @Html.TextBoxFor(g => g.Game.DateRelease, "0:{dd/MM/yyyy}", new { @class = "form-control", placeholder="DD/MM/YYYY"})
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(g => g.Game.Avaliable)
+        @Html.CheckBoxFor(g => g.Game.Avaliable, true)
+    </div>
+    @Helper1.Button("Register")
+}
+
+

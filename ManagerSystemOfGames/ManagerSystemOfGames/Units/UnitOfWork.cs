@@ -1,9 +1,7 @@
-﻿using ManagerSystemOfGames.Persistence;
+﻿
+using ManagementSystemOfGames.Persistence;
 using ManagerSystemOfGames.Repositories;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 
 namespace ManagerSystemOfGames.Units
 {

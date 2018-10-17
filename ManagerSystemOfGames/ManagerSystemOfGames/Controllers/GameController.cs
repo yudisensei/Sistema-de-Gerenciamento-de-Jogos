@@ -1,4 +1,4 @@
-﻿using ManagerSystemOfGames.Models;
+﻿using ManagementSystemOfGames.Models;
 using ManagerSystemOfGames.Units;
 using System;
 using System.Collections.Generic;
@@ -37,7 +37,7 @@ namespace ManagerSystemOfGames.Controllers
 
         [HttpGet]
         // GET: Game
-        public ActionResult Cadastrar()
+        public ActionResult RegisterGame()
         {
             return View();
         }

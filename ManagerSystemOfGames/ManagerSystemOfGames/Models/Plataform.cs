@@ -1,4 +1,4 @@
-﻿namespace ManagerSystemOfGames.Models
+﻿namespace ManagementSystemOfGames.Models
 {
     public enum Plataform
     {

@@ -1,11 +1,9 @@
-﻿using ManagerSystemOfGames.Models;
-using System;
-using System.Collections.Generic;
-using System.Data.Entity;
-using System.Linq;
-using System.Web;
+﻿using ManagementSystemOfGames.Models;
 
-namespace ManagerSystemOfGames.Persistence
+using System.Data.Entity;
+
+
+namespace ManagementSystemOfGames.Persistence
 {
     public class GamesContext: DbContext
     {

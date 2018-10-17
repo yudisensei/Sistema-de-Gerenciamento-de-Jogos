@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Web;
-using ManagerSystemOfGames.Models;
-using ManagerSystemOfGames.Persistence;
+using ManagementSystemOfGames.Models;
+using ManagementSystemOfGames.Persistence;
+
 
 namespace ManagerSystemOfGames.Repositories
 {

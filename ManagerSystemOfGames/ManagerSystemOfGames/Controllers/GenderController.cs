@@ -1,9 +1,5 @@
-﻿using ManagerSystemOfGames.Models;
+﻿using ManagementSystemOfGames.Models;
 using ManagerSystemOfGames.Units;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace ManagerSystemOfGames.Controllers
@@ -26,9 +22,9 @@ namespace ManagerSystemOfGames.Controllers
             return RedirectToAction("List");
         }
 
-        [HttpPost]
+        [HttpGet]
         // GET: Gender
-        public ActionResult Register()
+        public ActionResult RegisterGender()
         {
             return View();
         }
